@@ -80,6 +80,6 @@ app.get("/", (req, res) => {
   res.send("Ema john server is running");
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
